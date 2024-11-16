@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">evergreen</string>
+    <string name="title">EverGreen</string>
 </resources>
