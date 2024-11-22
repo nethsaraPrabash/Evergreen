@@ -6,4 +6,5 @@
     <color name="primaryColor">#00602F</color>
     <color name="secondaryColor">#63DA6B</color>
     <color name="btnColor">#85D024</color>
+    <color name="txtColor">#E9EFEC</color>
 </resources>

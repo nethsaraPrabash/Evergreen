@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    >
+
+    <ImageView
+        android:id="@+id/SplashScreenImage"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/SplashScreenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120sp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/lumanosimo"
+        android:text="@string/title"
+        android:textColor="@color/primaryColor"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corner"
+        android:hint="@string/enter_your_username"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corner"
+        android:hint="@string/enter_your_email"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corner"
+        android:hint="@string/enter_your_password"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/txtPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_corner"
+        android:hint="@string/enter_your_repassword"
+        android:textSize="20sp"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:background="@drawable/custom_btn"
+        android:text="@string/sign_in"
+        android:textSize="20sp"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/sign_in"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>
