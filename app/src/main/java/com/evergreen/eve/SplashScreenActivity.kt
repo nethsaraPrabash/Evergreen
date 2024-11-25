@@ -21,27 +21,6 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash_screen)
-        
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN
-        )
-        
-        val backgroundImage: ImageView = findViewById(R.id.SplashScreenImage)
-        val backgroundText: TextView = findViewById(R.id.SplashScreenText)
-
-        val slideAnimation = AnimationUtils.loadAnimation(
-            this,
-            R.anim.side_side
-        )
-
-        backgroundImage.startAnimation(slideAnimation)
-
-        Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }, 3000)
 
     }
 }

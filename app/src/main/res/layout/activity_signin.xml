@@ -77,16 +77,6 @@
 
         />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginEnd="90dp"
-        android:background="@drawable/custom_btn"
-        android:text="@string/sign_in"
-        android:textSize="20sp"
-        />
-
 
     <Button
         android:layout_width="match_parent"
