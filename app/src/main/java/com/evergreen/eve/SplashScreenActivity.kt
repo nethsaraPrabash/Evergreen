@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.view.animation.AnimationUtils
+import android.widget.Button
+import android.widget.Toast
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
@@ -22,5 +24,14 @@ class SplashScreenActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash_screen)
 
+        findViewById<Button>(R.id.btngo).setOnClickListener{
+
+            intent = Intent(this, LandingPageActivity::class.java)
+            startActivity(intent);
+
+
+        }
+
     }
+
 }
