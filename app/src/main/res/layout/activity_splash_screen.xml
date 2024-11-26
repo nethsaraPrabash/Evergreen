@@ -50,8 +50,7 @@
         android:background="@drawable/custom_btn01"
         android:fontFamily="@font/madimione"
         android:text="@string/start_text"
-        android:textSize="40sp"
-        tools:ignore="HardcodedText" />
+        android:textSize="40sp" />
 
 
 
