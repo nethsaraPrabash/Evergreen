@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/bgcolor"
     android:orientation="vertical"
-    tools:context=".SplashScreenActivity">
+    tools:context=".LandingPageActivity">
 
     <ImageView
         android:id="@+id/SplashScreenImage"
@@ -34,6 +34,7 @@
         android:textSize="40sp"
         tools:ignore="HardcodedText" />
 
+
     
 
 
@@ -59,8 +60,6 @@
         android:text="@string/sigup"
         android:textSize="40sp"
         tools:ignore="HardcodedText" />
-
-
 
 
 </LinearLayout>
