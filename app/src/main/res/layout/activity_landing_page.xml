@@ -34,17 +34,7 @@
         android:textSize="40sp"
         tools:ignore="HardcodedText" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="78dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/custom_btn01"
-        android:fontFamily="@font/madimione"
-        android:text="@string/sigin"
-        android:textSize="40sp"
-        tools:ignore="HardcodedText" />
+    
 
 
 
