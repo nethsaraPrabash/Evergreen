@@ -12,15 +12,11 @@
         android:background="@color/secondaryColor"
         android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/backbtn"
-            android:layout_width="10mm"
-            android:layout_height="10mm"
-            android:contentDescription="null"
-            android:layout_margin="5sp"
-            android:src="@drawable/b1">
-
-        </ImageButton>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_back_btn"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -31,11 +27,7 @@
             android:fontFamily="sans-serif"
             android:layout_gravity="center"
             />
-        <ImageView
-            android:layout_width="10mm"
-            android:layout_height="10mm"
-            android:src="@drawable/logo"
-            />
+
 
 
     </LinearLayout>
