@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/secondaryColor"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="10mm"
+            android:layout_height="10mm"
+            android:contentDescription="null"
+            android:layout_margin="5sp"
+            android:src="@drawable/b1">
+
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:textSize="45dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:layout_width="10mm"
+            android:layout_height="10mm"
+            android:src="@drawable/logo"
+            />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/notification_container"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/btnColor"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="@color/black"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/btnB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="@color/black"
+            android:text="Tea" />
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="@color/black"
+            android:text="Fertilizer" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
