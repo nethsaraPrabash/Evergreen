@@ -32,10 +32,11 @@
                <TextView
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                     android:text="Month"
-                     android:textSize="30dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
+                   android:text="Month"
+                   android:textColor="@color/black"
+                   android:textSize="30dp"
+                   android:textStyle="bold"
+                   android:gravity="center"
 
                      />
 
@@ -82,6 +83,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Total Amount"
+                    android:textColor="@color/black"
                     android:textSize="30dp"
                     android:textStyle="bold"
                     android:gravity="center"
@@ -101,6 +103,7 @@
                         android:layout_width="40dp"
                         android:layout_height="48dp"
                         android:text="Rs."
+                        android:textColor="@color/black"
                         android:textSize="20dp"
                         android:gravity="center"
                         android:textStyle="bold"
@@ -151,6 +154,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Total Amount Playable"
+                android:textColor="@color/black"
                 android:textSize="30dp"
                 android:textStyle="bold"
 
@@ -169,6 +173,7 @@
                     android:layout_width="40dp"
                     android:layout_height="48dp"
                     android:text="Rs."
+                    android:textColor="@color/black"
                     android:textSize="20dp"
                     android:gravity="center"
                     android:textStyle="bold"
@@ -193,6 +198,7 @@
                 android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Arrears"
+                android:textColor="@color/black"
                 android:textSize="30dp"
                 android:textStyle="bold"
 
@@ -211,6 +217,7 @@
                     android:layout_width="40dp"
                     android:layout_height="48dp"
                     android:text="Rs."
+                    android:textColor="@color/black"
                     android:textSize="20dp"
                     android:gravity="center"
                     android:textStyle="bold"
