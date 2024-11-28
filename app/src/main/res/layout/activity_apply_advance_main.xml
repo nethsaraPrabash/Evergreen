@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="Apply Advance"
             android:textColor="@color/black"
-            android:textSize="45dp"
+            android:textSize="43dp"
             android:gravity="center"
             android:textStyle="bold"
             android:fontFamily="sans-serif"
@@ -86,13 +86,14 @@
                    <TextView
                        android:id="@+id/txtMonth"
                        android:layout_width="match_parent"
-                       android:layout_height="48dp"
+                       android:layout_height="wrap_content"
                        android:layout_marginTop="8dp"
                        android:layout_marginStart="20dp"
                        android:layout_marginEnd="20dp"
                        android:layout_marginBottom="20dp"
                        android:background="@drawable/round_corner"
                        android:hint="month"
+                       android:textColor="@color/black"
                        android:textSize="20sp"
                        />
 
@@ -144,12 +145,13 @@
                     <TextView
                         android:id="@+id/txtTotalAmount"
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/round_corner"
                         android:hint="total amount"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
                         />
 
@@ -175,7 +177,7 @@
         <LinearLayout
             android:id="@+id/llAdvanceAmount"
             android:layout_width="match_parent"
-            android:layout_height="429dp"
+            android:layout_height="375dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
@@ -196,30 +198,29 @@
                 android:id="@+id/llTotalAmountPayable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="48dp"
+                    android:gravity="center"
                     android:text="Rs."
                     android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txtAdvanceAmount"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/round_corner"
                     android:hint="total advance amount"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -240,40 +241,39 @@
                 android:id="@+id/llArrears"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="48dp"
+                    android:gravity="center"
                     android:text="Rs."
                     android:textColor="@color/black"
                     android:textSize="20dp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txtArrearsAmount"
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/round_corner"
                     android:hint="arrears amount"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
             </LinearLayout>
 
 
-
             <Button
+                android:id="@+id/btnApplyAdvance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="70dp"
                 android:backgroundTint="@color/btnColor"
                 android:text="Apply Advance"
                 android:textColor="@color/black"
