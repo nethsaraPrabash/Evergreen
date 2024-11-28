@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Evergreen"
         tools:targetApi="31">
+<<<<<<< HEAD
         <activity
             android:name=".HomeActivity"
             android:exported="true" >
@@ -23,6 +24,30 @@
             </intent-filter>
 
         </activity>
+=======
+>>>>>>> 13cac9c04f9c155fb7e40f9c5e5bc4d090dcd659
+        <activity
+            android:name=".Apply_AdvanceLoadPage"
+            android:exported="true" >
+
+
+
+        </activity>
+        <activity
+<<<<<<< HEAD
+            android:name=".SplashScreenActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+=======
+            android:name=".Apply_AdvanceMain"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+>>>>>>> 13cac9c04f9c155fb7e40f9c5e5bc4d090dcd659
+
+        </activity>
         <activity
             android:name=".LandingPageActivity"
             android:exported="false" />
@@ -31,8 +56,6 @@
             android:name=".SplashScreenActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-
 
         </activity>
     </application>
