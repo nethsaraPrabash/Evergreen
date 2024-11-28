@@ -2,6 +2,7 @@ package com.evergreen.eve;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -27,6 +28,12 @@ public class Apply_AdvanceLoadPage extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.loadApplyAdvanceBack);
 
         imageView.setOnClickListener(v -> {
+            startActivity(new Intent(Apply_AdvanceLoadPage.this, Apply_AdvanceMain.class));
+        });
+
+        Button button = findViewById(R.id.btnAdvanceCancel);
+
+        button.setOnClickListener(v -> {
             startActivity(new Intent(Apply_AdvanceLoadPage.this, Apply_AdvanceMain.class));
         });
     }
