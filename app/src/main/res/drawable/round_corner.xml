@@ -10,6 +10,6 @@
         android:color="@color/txtColor"/>
     <stroke
         android:color="#000"
-        android:width="2dp"/>
+        android:width="5dp"/>
 
 </shape>

@@ -10,5 +10,10 @@
     <string name="start_text">Let\'s Go…</string>
     <string name="sigin">Sign In</string>
     <string name="sigup">Sign Up</string>
+    <string name="home">Home</string>
+    <string name="fertilizer">Fertilizer</string>
+    <string name="tea">Tea</string>
+    <string name="payment">Payment</string>
+    <string name="settings">Settings</string>
 
 </resources>
