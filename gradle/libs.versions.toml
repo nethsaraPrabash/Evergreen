@@ -1,10 +1,6 @@
 [versions]
-<<<<<<< HEAD
 agp = "8.4.0-rc02"
 fragmentKtx = "1.8.5"
-=======
-agp = "8.7.2"
->>>>>>> 13cac9c04f9c155fb7e40f9c5e5bc4d090dcd659
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
