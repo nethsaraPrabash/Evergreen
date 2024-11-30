@@ -25,7 +25,7 @@
             android:text="Edit Profile"
             android:fontFamily="@font/sedan"
             android:textSize="60dp"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="15dp"/>
             
 
     </LinearLayout>
@@ -60,7 +60,7 @@
                     android:layout_margin="20dp"
                     android:text="Name:"
                     android:textSize="40dp"
-                    android:fontFamily="@font/sedan">
+                    android:fontFamily="@font/sedan"/>
 
                 <EditText
                     android:layout_width="240dp"
@@ -98,7 +98,7 @@
                     android:layout_margin="10dp"
                     android:text="Contact:"
                     android:textSize="30dp"
-                    android:fontFamily="@font/sedan">
+                    android:fontFamily="@font/sedan"/>
 
                 <EditText
                     android:layout_width="240dp"
@@ -117,7 +117,7 @@
                     android:layout_margin="20dp"
                     android:text="Email:"
                     android:textSize="40dp"
-                    android:fontFamily="@font/sedan">
+                    android:fontFamily="@font/sedan"/>
 
                 <EditText
                     android:layout_width="240dp"
