@@ -50,7 +50,6 @@
         <Button
             android:layout_width="300dp"
             android:layout_height="79dp"
-            android:background="@drawable/round_btn"
             android:layout_gravity="center"
             android:backgroundTint="@color/secondaryColor"
             android:text="Current Location"
