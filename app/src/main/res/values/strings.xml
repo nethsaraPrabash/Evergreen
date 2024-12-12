@@ -20,5 +20,6 @@
     <string name="admin">Admin</string>
     <string name="farmer">farmer</string>
     <string name="service_type">Enter your service type</string>
+    <string name="log_in">Log In</string>
 
 </resources>
