@@ -20,7 +20,7 @@
         />
 
     <EditText
-        android:id="@+id/txtAdminUsername"
+        android:id="@+id/txtAdminEmail"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
