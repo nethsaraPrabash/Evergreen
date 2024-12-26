@@ -38,6 +38,8 @@ android {
 
 dependencies {
 
+    val fragment_version = "1.8.5"
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -52,5 +54,8 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.auth)
+    implementation(libs.androidx.fragment.ktx)
 }
+
+
 
