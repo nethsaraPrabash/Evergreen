@@ -26,7 +26,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btngo).setOnClickListener{
 
-            intent = Intent(this, LandingPageActivity::class.java)
+            intent = Intent(this, ActivityUserSelector::class.java)
             startActivity(intent);
 
 

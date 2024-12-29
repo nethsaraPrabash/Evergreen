@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.evergreen.eve" />
+                  <option name="mobileSdkAppId" value="1:201763711380:android:f12cdeebc56cbc54aa8781" />
+                  <option name="projectId" value="prathibhatea-6c2cf" />
+                  <option name="projectNumber" value="201763711380" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
