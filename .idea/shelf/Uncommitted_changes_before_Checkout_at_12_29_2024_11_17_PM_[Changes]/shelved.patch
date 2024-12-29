@@ -1,0 +1,58 @@
+Index: .idea/appInsightsSettings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AppInsightsSettings\">\r\n    <option name=\"tabSettings\">\r\n      <map>\r\n        <entry key=\"Firebase Crashlytics\">\r\n          <value>\r\n            <InsightsFilterSettings>\r\n              <option name=\"connection\">\r\n                <ConnectionSetting>\r\n                  <option name=\"appId\" value=\"com.evergreen.eve\" />\r\n                  <option name=\"mobileSdkAppId\" value=\"1:201763711380:android:f12cdeebc56cbc54aa8781\" />\r\n                  <option name=\"projectId\" value=\"prathibhatea-6c2cf\" />\r\n                  <option name=\"projectNumber\" value=\"201763711380\" />\r\n                </ConnectionSetting>\r\n              </option>\r\n              <option name=\"signal\" value=\"SIGNAL_UNSPECIFIED\" />\r\n              <option name=\"timeIntervalDays\" value=\"THIRTY_DAYS\" />\r\n              <option name=\"visibilityType\" value=\"ALL\" />\r\n            </InsightsFilterSettings>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/appInsightsSettings.xml b/.idea/appInsightsSettings.xml
+--- a/.idea/appInsightsSettings.xml	(revision b0c1e4e310672b0979d83c7b86e6f8e0a5805083)
++++ b/.idea/appInsightsSettings.xml	(date 1735492247068)
+@@ -8,10 +8,10 @@
+             <InsightsFilterSettings>
+               <option name="connection">
+                 <ConnectionSetting>
+-                  <option name="appId" value="com.evergreen.eve" />
+-                  <option name="mobileSdkAppId" value="1:201763711380:android:f12cdeebc56cbc54aa8781" />
+-                  <option name="projectId" value="prathibhatea-6c2cf" />
+-                  <option name="projectNumber" value="201763711380" />
++                  <option name="appId" value="PLACEHOLDER" />
++                  <option name="mobileSdkAppId" value="" />
++                  <option name="projectId" value="" />
++                  <option name="projectNumber" value="" />
+                 </ConnectionSetting>
+               </option>
+               <option name="signal" value="SIGNAL_UNSPECIFIED" />
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"#GRADLE_LOCAL_JAVA_HOME\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveExternalAnnotations\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision b0c1e4e310672b0979d83c7b86e6f8e0a5805083)
++++ b/.idea/gradle.xml	(date 1735492247079)
+@@ -4,6 +4,7 @@
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
++        <option name="testRunner" value="CHOOSE_PER_TEST" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+         <option name="modules">
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" default=\"true\" project-jdk-name=\"jbr-17\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n  <component name=\"VisualizationToolProject\">\r\n    <option name=\"state\">\r\n      <ProjectState>\r\n        <option name=\"scale\" value=\"0.08646779074794639\" />\r\n      </ProjectState>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision b0c1e4e310672b0979d83c7b86e6f8e0a5805083)
++++ b/.idea/misc.xml	(date 1735492059652)
+@@ -1,4 +1,3 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
