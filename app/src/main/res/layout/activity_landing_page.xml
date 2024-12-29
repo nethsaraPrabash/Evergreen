@@ -22,12 +22,14 @@
 
 
     <Button
-        android:id="@+id/btnsignin"
+        android:id="@+id/signinPage"
         android:layout_width="match_parent"
         android:layout_height="78dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/btnColor"
+        android:textColor="@color/black"
         android:fontFamily="@font/madimione"
         android:text="@string/sigin"
         android:textSize="40sp"
@@ -42,19 +44,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/dont_have_acc"
-        android:layout_marginStart="150dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="130dp"
         android:layout_marginTop="200dp"
         android:textSize="15sp"
         />
 
 
     <Button
-        android:id="@+id/btnsignup"
+        android:id="@+id/signupPage"
         android:layout_width="match_parent"
         android:layout_height="78dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/btnColor"
+        android:textColor="@color/black"
         android:fontFamily="@font/madimione"
         android:text="@string/sigup"
         android:textSize="40sp"

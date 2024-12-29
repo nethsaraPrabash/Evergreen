@@ -43,6 +43,14 @@
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
+    <FrameLayout
+        android:id="@+id/home_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </FrameLayout>
+
     
 
 
@@ -52,7 +60,7 @@
         android:id="@+id/btmNavBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="420dp"
         app:itemBackground="@color/btnColor"
         app:menu="@menu/bottom_nav_bar_menu" />
 

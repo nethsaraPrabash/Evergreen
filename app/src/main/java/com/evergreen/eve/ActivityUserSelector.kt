@@ -8,20 +8,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class LandingPageActivity : AppCompatActivity() {
+class ActivityUserSelector : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_landing_page)
+        setContentView(R.layout.activity_user_selector)
 
-        setupNavigation(R.id.signinPage, SigninActivity::class.java)
-        setupNavigation(R.id.signupPage, SignupActivity::class.java)
+        setUpNavigation(R.id.btnFarmerLogin, SigninActivity::class.java)
+        setUpNavigation(R.id.btnAdminLogin, AdminLoginActivity::class.java)
     }
 
-    private fun <T> setupNavigation(buttonId: Int, targetActivity: Class<T>)
+    private fun <T> setUpNavigation(buttonId: Int, targetActivity: Class<T>)
     {
         findViewById<Button>(buttonId).setOnClickListener{
-            startActivity(Intent(this,targetActivity))
+            intent = Intent(this, targetActivity)
+            startActivity(intent)
         }
     }
 }

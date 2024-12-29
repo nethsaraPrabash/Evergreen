@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bgcolor"
+    tools:context=".ActivityUserSelector">
+
+    <TextView
+        android:id="@+id/SplashScreenText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/luckiestguy"
+        android:text="@string/service_type"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/admin"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        />
+
+    <Button
+        android:id="@+id/btnFarmerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/farmer"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        />
+
+
+
+
+</LinearLayout>
