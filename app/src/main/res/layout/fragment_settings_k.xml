@@ -8,7 +8,7 @@
     android:background="@color/bgcolor"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".SettingsScreenActivity">
+    tools:context=".SettingsK">
 
     <LinearLayout
         android:id="@+id/llSettingsScreen"

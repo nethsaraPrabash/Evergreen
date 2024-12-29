@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/bgcolor"
     android:orientation="vertical"
-    tools:context=".Apply_AdvanceLoadPage">
+    tools:context=".ApplyAdvanceLoadPageK">
 
     <LinearLayout
         android:layout_width="match_parent"
