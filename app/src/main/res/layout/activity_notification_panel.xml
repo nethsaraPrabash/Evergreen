@@ -13,25 +13,20 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="75dp"
+            android:layout_width="100dp"
             android:layout_height="80dp"
             android:src="@drawable/ic_back_btn"
-            android:id="@+id/notif_back"
             />
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:text="Notifications"
-            android:textSize="55dp"
+            android:textSize="45dp"
             android:gravity="center"
             android:textStyle="bold"
-            android:fontFamily="@font/sedan"
+            android:fontFamily="sans-serif"
             android:layout_gravity="center"
             />
-        <ImageView
-            android:layout_width="62dp"
-            android:layout_height="80dp"
-            android:src="@drawable/logo"/>
 
 
 
@@ -40,10 +35,44 @@
     <FrameLayout
         android:id="@+id/notification_container"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="500dp"
         android:layout_margin="20dp"
         />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/btnColor"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="@color/black"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/btnB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="@color/black"
+            android:text="Tea" />
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="@color/black"
+            android:text="Fertilizer" />
+
+
+    </LinearLayout>
 
 
 
