@@ -15,7 +15,19 @@
     <string name="tea">Tea</string>
     <string name="payment">Payment</string>
     <string name="settings">Settings</string>
+    <string name="signinCheck">Already have an account? Signin here</string>
+    <string name="signupCheck">Don\'t have an account? Signup here</string>
+    <string name="admin">Admin</string>
+    <string name="farmer">farmer</string>
+    <string name="service_type">Enter your service type</string>
+    <string name="log_in">Log In</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kilo_count">Kilo Count :  </string>
+    <string name="num_of_kilos"> 0 KG</string>
+    <string name="percentage">Percentage: </string>
+    <string name="num_percentage"> 0 %</string>
+    <string name="total">Total: </string>
+    <string name="num_total">Rs: 0</string>
 
 </resources>
