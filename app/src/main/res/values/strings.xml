@@ -6,7 +6,7 @@
     <string name="enter_your_password">Enter your password</string>
     <string name="enter_your_repassword">Enter your password again</string>
     <string name="dont_have_acc">Don\'t have an account?</string>
-    <string name="welcome_text">Providing Unmatched Value in Ceylon Tea Since 2012 </string>
+    <string name="welcome_text">Welcome to the modern Tea distribution Era.</string>
     <string name="start_text">Let\'s Go…</string>
     <string name="sigin">Sign In</string>
     <string name="sigup">Sign Up</string>
@@ -15,10 +15,6 @@
     <string name="tea">Tea</string>
     <string name="payment">Payment</string>
     <string name="settings">Settings</string>
-<<<<<<< HEAD
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-=======
     <string name="signinCheck">Already have an account? Signin here</string>
     <string name="signupCheck">Don\'t have an account? Signup here</string>
     <string name="admin">Admin</string>
@@ -33,6 +29,5 @@
     <string name="num_percentage"> 0 %</string>
     <string name="total">Total: </string>
     <string name="num_total">Rs: 0</string>
->>>>>>> b0c1e4e310672b0979d83c7b86e6f8e0a5805083
 
 </resources>
