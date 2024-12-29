@@ -1,5 +1,6 @@
 [versions]
 agp = "8.4.0-rc02"
+firebaseBom = "33.7.0"
 fragmentKtx = "1.8.5"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
@@ -11,10 +12,16 @@ material = "1.12.0"
 activity = "1.9.3"
 constraintlayout = "2.2.0"
 circleimageview = "3.1.0"
+googleGmsGoogleServices = "4.4.2"
+firebaseFirestore = "25.1.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+google-firebase-firestore = { module = "com.google.firebase:firebase-firestore" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -23,8 +30,10 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 circleimageview = { group = "de.hdodenhof", name = "circleimageview", version.ref = "circleimageview" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 
