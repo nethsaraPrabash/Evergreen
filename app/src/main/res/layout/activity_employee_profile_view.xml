@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/secondaryColor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_back_btn"
+            android:id="@+id/emp_view_prof_back"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:src="@drawable/u1"
+        android:layout_margin="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="User: Hirusha"
+            android:textSize="35dp"
+            android:layout_marginStart="20dp"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="ID:002"
+            android:textSize="35dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Location: Galle"
+            android:textSize="35dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Contact: 0771234567"
+            android:textSize="35dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Email: Hirusha@gmail.com"
+            android:textSize="29dp"
+            android:layout_marginStart="20dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
