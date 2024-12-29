@@ -12,21 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Evergreen"
         tools:targetApi="31">
-        <activity
-            android:name=".SettingsScreenActivity"
-            android:exported="true" >
 
-        </activity>
-        <activity
-            android:name=".Apply_AdvanceLoadPage"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".Apply_AdvanceMain"
-            android:exported="true">
-
-        </activity>
         <activity
             android:name=".LandingPageActivity"
             android:exported="false" />
