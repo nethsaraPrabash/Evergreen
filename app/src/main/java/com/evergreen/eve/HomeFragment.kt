@@ -5,9 +5,17 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 
 class HomeFragment : Fragment() {
+
+    private lateinit var countTextView: TextView
+    private lateinit var percentTextView: TextView
+    private lateinit var totalTextView: TextView
+    private lateinit var userNameTextView: TextView
+
+
 
     companion object {
         private const val TAG = "HomeFragment"
@@ -24,7 +32,33 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         Log.d(TAG, "onCreateView")
+
         return inflater.inflate(R.layout.fragment_home, container, false)
+
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val count = arguments?.getLong("count") ?: 0
+        val percent = arguments?.getDouble("percent") ?: 0.0
+        val total = arguments?.getLong("total") ?: 0
+        val userName = arguments?.getString("userName")
+
+        countTextView = view.findViewById(R.id.kilocount)
+        percentTextView = view.findViewById(R.id.percentage)
+        totalTextView = view.findViewById(R.id.total)
+        userNameTextView = view.findViewById(R.id.userNameField)
+
+
+        countTextView.text = "$count KG"
+        percentTextView.text = "$percent %"
+        totalTextView.text = "RS. $total"
+        userNameTextView.text = "$userName"
+
+
+
+
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

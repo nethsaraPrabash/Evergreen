@@ -29,5 +29,6 @@
     <string name="num_percentage"> 0 %</string>
     <string name="total">Total: </string>
     <string name="num_total">Rs: 0</string>
+    <string name="user_name_field">user Name</string>
 
 </resources>
