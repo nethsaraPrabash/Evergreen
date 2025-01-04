@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NotificationFragment"
+    android:backgroundTint="@color/bgcolor"
     android:layout_margin="50dp">
 
     <!-- TODO: Update blank fragment layout -->
@@ -11,15 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="New Notifications"
-        android:textSize="30dp"/>
+        android:textStyle="bold"
+        android:textSize="35dp"/>
 
     <ListView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/notification_list"
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:divider="@android:color/transparent"
         android:dividerHeight="20dp"
