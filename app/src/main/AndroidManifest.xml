@@ -26,6 +26,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Evergreen"
         tools:targetApi="31">
+
         <activity
             android:name=".LocationActivity"
             android:exported="false" />
@@ -45,22 +46,31 @@
             android:name=".SigninActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
-            android:exported="true" />
+            android:name=".LandingPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity
-            android:name=".LandingPageActivity"
-            android:exported="false" />
-        <activity android:name=".MainActivity" />
+
+        <activity android:name=".HomeActivity"
+            android:exported="false">
+
+        </activity>
+
 
 
         <provider
@@ -76,6 +86,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAsWhPJ2w0INCaz3mxdVkVlYe7DUNrGe-w" />
+
 
 
     </application>
