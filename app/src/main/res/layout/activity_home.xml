@@ -34,12 +34,14 @@
 
 
             <de.hdodenhof.circleimageview.CircleImageView
+
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="280dp"
                 android:src="@drawable/logo"
                 android:padding="8dp"
-                android:id="@+id/circle_imageView"/>
+                android:id="@+id/profilepic"/>
+
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -51,7 +53,7 @@
 
     </FrameLayout>
 
-    
+
 
 
 
@@ -60,7 +62,6 @@
         android:id="@+id/btmNavBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="420dp"
         app:itemBackground="@color/btnColor"
         app:menu="@menu/bottom_nav_bar_menu" />
 

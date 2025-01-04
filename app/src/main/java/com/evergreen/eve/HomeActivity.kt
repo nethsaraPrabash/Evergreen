@@ -1,5 +1,6 @@
 package com.evergreen.eve
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
@@ -8,8 +9,18 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import androidx.fragment.app.replace
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import de.hdodenhof.circleimageview.CircleImageView
 
 class HomeActivity : AppCompatActivity() {
+    val homeFragment = HomeFragment()
+    val fertilizerFragment = FertilizerFragment()
+    val teaFragment = TeaFragment()
+    val paymentsFragment = PaymentsFragment()
+    val settingsFragment = SettingsFragment()
+    val profileActivity = ProfileActivity()
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -20,32 +31,78 @@ class HomeActivity : AppCompatActivity() {
             insets
         }
 
+        loadFragment(homeFragment)
+
+        val propicClick = findViewById<CircleImageView>(R.id.profilepic)
+
+        propicClick.setOnClickListener{
+            loadProfilePage()
+
+        }
+
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.btmNavBar)
+        bottomNavigationView.setOnItemSelectedListener { menuItem ->
+            when(menuItem.itemId)
+            {
+                R.id.home -> {
+                    loadFragment(homeFragment)
+                    true
+                }
+
+                R.id.fertilizer -> {
+                    loadFragment(fertilizerFragment)
+                    true
+                }
+                R.id.tea -> {
+                    loadFragment(teaFragment)
+                    true
+                }
+                R.id.payment -> {
+                    loadFragment(paymentsFragment)
+                    true
+                }
+                R.id.settings -> {
+                    loadFragment(settingsFragment)
+                    true
+                }
+                else -> false
+            }
+        }
+
         val count = intent.getLongExtra("count", 0)
         val percent = intent.getDoubleExtra("percent", 0.0)
         val total = intent.getLongExtra("total", 0)
         val userName = intent.getStringExtra("userName").toString()
 
-        getHome(count, percent, total, userName)
+        passDataToHomeFragment(count,percent,total, userName)
+
+
 
     }
 
-    private fun getHome(count: Long, percent: Double, total: Long, userName: String)
-    {
-        val bundle =Bundle().apply {
+    private fun loadFragment(fragment: Fragment) {
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.home_fragment_container, fragment)
+        transaction.commit()
+    }
+
+    private fun passDataToHomeFragment(count: Long, percent: Double, total: Long, userName: String) {
+        val bundle = Bundle().apply {
             putLong("count", count)
             putDouble("percent", percent)
             putLong("total", total)
             putString("userName", userName)
         }
 
-        val fragment = HomeFragment().apply {
-            arguments = bundle
-        }
-
-
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.add(R.id.home_fragment_container, fragment)
-        fragmentTransaction.commit()
+        homeFragment.arguments = bundle
+        loadFragment(homeFragment)
     }
+
+    private fun loadProfilePage()
+    {
+        intent = Intent(this, profileActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
 }
