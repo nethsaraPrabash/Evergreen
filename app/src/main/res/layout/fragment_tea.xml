@@ -69,11 +69,11 @@
              android:text="400g Quantity ="
              android:padding="7dp"
                 android:textSize="25dp"/>
-         <NumberPicker
-             android:layout_width="60dp"
-             android:layout_height="40dp"
-             android:layout_marginLeft="10px"
-             android:layout_marginRight="10px"/>
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_marginLeft="10px"/>
 
      </LinearLayout>
      <LinearLayout
@@ -85,13 +85,14 @@
          <TextView
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:text="1 kg Quantity ="
+             android:text="   1 kg Quantity ="
              android:textSize="25dp"/>
-         <NumberPicker
-             android:layout_width="100dp"
-             android:layout_height="40dp"
-             android:layout_marginLeft="10px"
-             android:layout_marginRight="10px"/>
+
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                  android:layout_margin="5dp" />
 
      </LinearLayout>
 
