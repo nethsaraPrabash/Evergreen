@@ -1,11 +1,13 @@
 package com.evergreen.eve
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ListView
 import android.widget.Toast
 
@@ -32,6 +34,12 @@ class SettingsFragment : Fragment() {
         listView.setOnItemClickListener { parent, _, position, _ ->
             val item = parent.getItemAtPosition(position) as String
             Toast.makeText(requireContext(), "Clicked: $item", Toast.LENGTH_SHORT).show()
+        }
+
+        val logOutButton: Button = view.findViewById(R.id.btnLogOut)
+        logOutButton.setOnClickListener {
+            val intent = Intent(requireContext(), SplashScreenActivity::class.java)
+            startActivity(intent)
         }
 
         return view
