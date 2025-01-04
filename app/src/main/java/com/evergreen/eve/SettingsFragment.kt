@@ -43,6 +43,7 @@ class SettingsFragment : Fragment() {
         }
 
         return view
+
         return inflater.inflate(R.layout.fragment_settings, container, false)
     }
 

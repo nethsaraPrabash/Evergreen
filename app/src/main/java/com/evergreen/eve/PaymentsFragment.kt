@@ -30,6 +30,8 @@ class PaymentsFragment : Fragment() {
             startActivity(intent)
         }
         return view
+        return inflater.inflate(R.layout.fragment_payments, container, false)
+
     }
 
 }
