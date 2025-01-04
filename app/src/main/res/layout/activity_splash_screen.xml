@@ -21,13 +21,13 @@
 
     <TextView
         android:id="@+id/SplashScreenText"
-        android:layout_width="wrap_content"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70sp"
-        android:fontFamily="@font/luckiestguy"
+        android:layout_marginStart="38dp"
+        android:fontFamily="@font/opensans02"
         android:text="@string/title"
         android:textColor="@color/black"
-        android:textSize="40sp" />
+        android:textSize="44sp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -38,6 +38,7 @@
         android:fontFamily="@font/lusitanaregular"
         android:gravity="center"
         android:text="@string/welcome_text"
+        android:textColor="@color/black"
         android:textSize="25sp" />
 
     <Button
@@ -48,9 +49,10 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/round_btn"
-        android:backgroundTint="@color/btnColor"
-        android:fontFamily="@font/madimione"
+        android:backgroundTint="@color/primaryColor"
+        android:fontFamily="@font/opensans02"
         android:text="@string/start_text"
+        android:textColor="@color/white"
         android:textSize="40sp" />
 
 
