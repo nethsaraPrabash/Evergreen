@@ -55,6 +55,7 @@ dependencies {
     implementation(libs.firebase.analytics)
     implementation(libs.firebase.auth)
     implementation(libs.androidx.fragment.ktx)
+    implementation (libs.play.services.maps)
 }
 
 

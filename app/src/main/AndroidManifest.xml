@@ -12,6 +12,10 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,6 +26,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Evergreen"
         tools:targetApi="31">
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
@@ -55,6 +62,7 @@
             android:exported="false" />
         <activity android:name=".MainActivity" />
 
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -64,6 +72,12 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAsWhPJ2w0INCaz3mxdVkVlYe7DUNrGe-w" />
+
+
     </application>
 
 </manifest>
