@@ -1,6 +1,8 @@
 package com.evergreen.eve
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,6 +19,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 class LocationActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var myMap: GoogleMap
+    private lateinit var backBtn: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -30,6 +33,14 @@ class LocationActivity : AppCompatActivity(), OnMapReadyCallback {
 
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
+
+        backBtn =  findViewById(R.id.loadLocationBack)
+
+        backBtn.setOnClickListener{
+            intent = Intent(this,HomeActivity::class.java)
+            startActivity(intent)
+
+        }
     }
 
 

@@ -9,15 +9,36 @@
     android:gravity="center"
     tools:context=".LocationActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Our Location"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/lusitanabold"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@color/secondaryColor"
+        >
 
-    />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_back_btn"
+            android:id="@+id/loadLocationBack"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Location"
+            android:textColor="@color/black"
+            android:textSize="43dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
 
     <fragment
         android:id="@+id/map"

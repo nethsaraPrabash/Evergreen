@@ -22,19 +22,19 @@ class ProfileActivity : AppCompatActivity() {
 
     private lateinit var profilePic: Button
     private lateinit var imageUri: Uri
+    private lateinit var backBtn: ImageView
 
     private val cameraLauncher = registerForActivityResult(ActivityResultContracts.TakePicture()) { success ->
         if (success) {
             val imageView = findViewById<ImageView>(R.id.setting_profile_image)
-            imageView.setImageURI(imageUri) // Display the captured image
+            imageView.setImageURI(imageUri)
         }
     }
 
     private val galleryLauncher = registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
         uri?.let {
-            // Handle the selected image URI
             val imageView = findViewById<ImageView>(R.id.setting_profile_image)
-            imageView.setImageURI(it) // Display the selected image in an ImageView
+            imageView.setImageURI(it)
         }
     }
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,8 +46,15 @@ class ProfileActivity : AppCompatActivity() {
 
         profilePic.setOnClickListener{
             showImagePicDialog()
-
         }
+
+        backBtn = findViewById(R.id.loadProfileBack)
+
+        backBtn.setOnClickListener{
+            intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun showImagePicDialog()
