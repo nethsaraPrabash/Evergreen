@@ -38,6 +38,7 @@ android {
 
 dependencies {
 
+    implementation(libs.firebase.auth.ktx)
     val fragment_version = "1.8.5"
 
     implementation(libs.androidx.core.ktx)

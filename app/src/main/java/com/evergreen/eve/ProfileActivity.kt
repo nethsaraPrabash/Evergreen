@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.ProgressBar
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
@@ -23,6 +24,7 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var profilePic: Button
     private lateinit var imageUri: Uri
     private lateinit var backBtn: ImageView
+    private lateinit var userName: TextView
 
     private val cameraLauncher = registerForActivityResult(ActivityResultContracts.TakePicture()) { success ->
         if (success) {
@@ -53,6 +55,13 @@ class ProfileActivity : AppCompatActivity() {
         backBtn.setOnClickListener{
             intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
+        }
+
+        userName = findViewById(R.id.profileUserName)
+
+        val receivedUserName = intent.getStringExtra("userName")
+        if (!receivedUserName.isNullOrEmpty()) {
+            userName.text = receivedUserName
         }
 
     }

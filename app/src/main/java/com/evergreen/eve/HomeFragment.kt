@@ -53,7 +53,7 @@ class HomeFragment : Fragment() {
 
         countTextView.text = "$count KG"
         percentTextView.text = "$percent %"
-        totalTextView.text = "RS. $total"
+        totalTextView.text = "$total KG"
         userNameTextView.text = "$userName"
 
 

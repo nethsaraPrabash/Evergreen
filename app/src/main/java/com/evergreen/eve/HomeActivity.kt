@@ -139,10 +139,11 @@ class HomeActivity : AppCompatActivity() {
         loadFragment(homeFragment)
     }
 
-    private fun loadProfilePage()
-    {
-        intent = Intent(this, profileActivity::class.java)
-        startActivity(intent)
+    private fun loadProfilePage() {
+        val userName = intent.getStringExtra("userName").toString() // Retrieve the username
+        val profileIntent = Intent(this, ProfileActivity::class.java)
+        profileIntent.putExtra("userName", userName) // Pass the username as an extra
+        startActivity(profileIntent)
         finish()
     }
 
