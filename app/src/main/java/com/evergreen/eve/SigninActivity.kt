@@ -76,8 +76,14 @@ class SigninActivity : AppCompatActivity() {
                             loginSuccess = true
                             Log.d("Login", "Login successful for user: ${document.id}")
                             Toast.makeText(applicationContext, "Login Successful!", Toast.LENGTH_SHORT).show()
+
+                            val count = document.getLong("count") ?: 0
+                            val percent = document.getDouble("percent") ?: 0.0
+                            val total = document.getLong("total") ?: 0
+                            val userName = document.getString("userName").toString()
+
                             // Proceed to the next activity or screen
-                            navigateHome()
+                            navigateHome(count, percent, total, userName)
                             break
                         }
                     }
@@ -96,9 +102,15 @@ class SigninActivity : AppCompatActivity() {
             }
     }
 
-    private fun navigateHome()
+    private fun navigateHome(count: Long, percent: Double, total: Long, userName: String)
     {
-        val intent = Intent(this, HomeActivity::class.java)
+        val intent = Intent(this, HomeActivity::class.java).apply {
+            putExtra("count", count)
+            putExtra("percent", percent)
+            putExtra("total", total)
+            putExtra("userName", userName)
+        }
         startActivity(intent)
+        finish()
     }
 }
