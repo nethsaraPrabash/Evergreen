@@ -26,7 +26,7 @@ class PaymentsFragment : Fragment() {
 
         val applyPaymentButton: Button = view.findViewById(R.id.btnApplyAdvance)
             applyPaymentButton.setOnClickListener {
-            val intent = Intent(requireContext(), ApplyPaymentFragment::class.java)
+            val intent = Intent(requireContext(), ApplyPaymentActivity::class.java)
             startActivity(intent)
         }
         return view
