@@ -70,6 +70,7 @@
              android:padding="7dp"
                 android:textSize="25dp"/>
         <EditText
+            android:id="@+id/quantity_400g"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
@@ -89,6 +90,7 @@
              android:textSize="25dp"/>
 
             <EditText
+                android:id="@+id/quantity_1kg"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:padding="7dp"
@@ -97,6 +99,7 @@
      </LinearLayout>
 
       <Button
+          android:id="@+id/btnPurchase"
           android:layout_width="180dp"
           android:layout_height="60dp"
           android:layout_gravity="center"
