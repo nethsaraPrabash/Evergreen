@@ -51,7 +51,7 @@
                 android:textSize="20sp" />
         </LinearLayout>
 
-        <!-- Advance Amount Section -->
+        
         <LinearLayout
             android:id="@+id/llAdvanceAmountAll"
             android:layout_width="match_parent"
