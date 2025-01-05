@@ -11,7 +11,7 @@
     tools:context=".SettingsFragment">
 
     <LinearLayout
-        android:id="@+id/llSettingsScreen"
+        android:id="@+id/llFetilizerScreen"
         android:layout_width="match_parent"
         android:layout_height="600dp"
         android:layout_gravity="center"
@@ -22,7 +22,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/llAdvanceAmount"
+            android:id="@+id/llfetilizerHeader"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="15dp"
@@ -62,35 +62,78 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/llTotalAmountPayable"
+                android:id="@+id/llTotalAmountPayableMain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="110dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="sans-serif"
-                    android:gravity="center"
-                    android:text="Quantity:"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/txtQuantityAmount"
+                <LinearLayout
+                    android:id="@+id/llFertilizersEnterPayable"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/round_corner"
-                    android:hint="Enter quantity"
-                    android:textSize="20dp" />
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Fertilizers:"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtfertilizersName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_corner"
+                        android:hint="Enter fertilizers"
+                        android:textSize="20dp" />
 
 
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llQuantityEnterPayable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:text="Quantity:"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtQuantityAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_corner"
+                        android:hint="Enter quantity"
+                        android:textSize="20dp" />
+
+
+
+                </LinearLayout>
 
             </LinearLayout>
+
+
 
 
             <Button
