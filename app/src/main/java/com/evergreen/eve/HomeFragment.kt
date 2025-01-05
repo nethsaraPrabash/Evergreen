@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+
 class HomeFragment : Fragment() {
 
     private lateinit var countTextView: TextView
@@ -14,7 +16,7 @@ class HomeFragment : Fragment() {
     private lateinit var totalTextView: TextView
     private lateinit var userNameTextView: TextView
 
-
+    private val sharedViewModel: SharedViewModel by activityViewModels()
 
     companion object {
         private const val TAG = "HomeFragment"
@@ -54,6 +56,8 @@ class HomeFragment : Fragment() {
         percentTextView.text = "$percent %"
         totalTextView.text = "$total KG"
         userNameTextView.text = "$userName"
+
+        sharedViewModel.updateTotalAmount(total)
 
 
 
