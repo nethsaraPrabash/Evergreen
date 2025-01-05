@@ -14,6 +14,8 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.replace
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.evergreen.eve.FertilizerFragment
 import com.evergreen.eve.HomeFragment
 import com.evergreen.eve.LocationActivity
@@ -31,6 +33,8 @@ class HomeActivity : AppCompatActivity() {
     val paymentsFragment = PaymentsFragment()
     val settingsFragment = SettingsFragment()
     val profileActivity = ProfileActivity()
+
+
 
     private lateinit var btnDropDown: ImageView
 
@@ -125,6 +129,16 @@ class HomeActivity : AppCompatActivity() {
 
     private fun loadFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
+
+        if (fragment is PaymentsFragment) {
+            // Pass data to PaymentsFragment
+            val total = intent.getLongExtra("total", 0)
+            val bundle = Bundle().apply {
+                putLong("total", total)
+            }
+            fragment.arguments = bundle
+        }
+
         transaction.replace(R.id.home_fragment_container, fragment)
         transaction.commit()
     }

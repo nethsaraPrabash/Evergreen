@@ -7,140 +7,83 @@
     android:background="@color/bgcolor"
     tools:context=".PaymentsFragment"
     >
-
-
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
 
-        >
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center" />
 
         <LinearLayout
+            android:id="@+id/llTotalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="48dp"
+                android:text="Rs."
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Advance Amount Section -->
+        <LinearLayout
+            android:id="@+id/llAdvanceAmountAll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_gravity="center"
-            android:layout_marginTop="12dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="30dp"
-            >
-
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="15dp"
-            >
+            android:background="@drawable/round_corner"
+            android:layout_marginTop="20dp"
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Total Amount"
+                android:text="Total Amount Payable"
                 android:textColor="@color/black"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:textStyle="bold"
-                android:gravity="center"
-
-                />
+                android:gravity="center" />
 
             <LinearLayout
-                android:id="@+id/llTotalAmount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                >
+                android:gravity="center"
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="48dp"
                     android:text="Rs."
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    />
-
-                <TextView
-                    android:id="@+id/txtTotalAmount"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:text="0"
                     android:textColor="@color/black"
                     android:textSize="20sp"
-                    />
-
-            </LinearLayout>
-
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llAdvanceAmountAll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/round_corner"
-        android:backgroundTint="@color/white"
-        >
-
-        <LinearLayout
-            android:id="@+id/llAdvanceAmount"
-            android:layout_width="match_parent"
-            android:layout_height="375dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Total Amount Playable"
-                android:textColor="@color/black"
-                android:textSize="30dp"
-                android:textStyle="bold"
-
-                />
-
-            <LinearLayout
-                android:id="@+id/llTotalAmountPayable"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="40dp"
-                    android:layout_height="48dp"
                     android:gravity="center"
-                    android:text="Rs."
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -148,72 +91,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/round_corner"
-                    android:hint="total advance amount"
+                    android:text="Advance Amount"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
-
             </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:gravity="center"
-                android:text="Arrears"
-                android:textColor="@color/black"
-                android:textSize="30dp"
-                android:textStyle="bold"
-
-                />
-
-            <LinearLayout
-                android:id="@+id/llArrears"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="40dp"
-                    android:layout_height="48dp"
-                    android:gravity="center"
-                    android:text="Rs."
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/txtArrearsAmount"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/round_corner"
-                    android:hint="arrears amount"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-
-            </LinearLayout>
-
 
             <Button
                 android:id="@+id/btnApplyAdvance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="20dp"
                 android:backgroundTint="@color/btnColor"
                 android:text="Apply Advance"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
-
         </LinearLayout>
-
+    </LinearLayout>
     </LinearLayout>
 
-
-</LinearLayout>
