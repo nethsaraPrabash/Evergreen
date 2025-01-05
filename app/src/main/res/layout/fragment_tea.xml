@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     tools:context=".TeaFragment"
-    android:layout_margin="150px"
     >
 
     <!-- TODO: Update blank fragment layout -->
