@@ -1,16 +1,19 @@
 package com.evergreen.eve
 
 import android.app.ProgressDialog
+import android.content.Intent
 import android.os.Bundle
 import android.provider.ContactsContract.CommonDataKinds.Email
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.evergreen.eve.models.Auth
 import com.google.firebase.firestore.FirebaseFirestore
+import org.w3c.dom.Text
 
 class SignupActivity : AppCompatActivity() {
 
@@ -20,6 +23,7 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var txtUsername :EditText
     private lateinit var btnSignUp :Button
     private lateinit var db : FirebaseFirestore
+    private lateinit var redirectSignin: TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +38,7 @@ class SignupActivity : AppCompatActivity() {
         txtUsername = findViewById(R.id.txtUsername)
         txtPassword2 = findViewById(R.id.txtPassword2)
         btnSignUp = findViewById(R.id.signup)
+        redirectSignin = findViewById(R.id.redirectSignin)
 
 
         btnSignUp.setOnClickListener{
@@ -63,6 +68,11 @@ class SignupActivity : AppCompatActivity() {
                 }
 
             }
+        }
+
+        redirectSignin.setOnClickListener{
+            intent = Intent(this, SigninActivity::class.java)
+            startActivity(intent)
         }
     }
 
